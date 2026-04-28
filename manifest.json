@@ -1,7 +1,7 @@
 {
     "name": "iPad-tid",
     "short_name": "iPad-tid",
-    "start_url": "/",
+    "start_url": "/RewardingFront/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#5e2b97",
@@ -18,3 +18,4 @@
       }
     ]
   }
+
