@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#5e2b97">
+    <title>iPad-tid</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+
+
+</head>
+
+<body>
+
+<h1>📱 iPad-tid</h1>
+
+<select id="child">
+  <option value="Sarah">Sarah</option>
+  <option value="Sally">Sally</option>
+</select>
+
+<input type="date" id="date">
+<p id="weekday"></p>
+
+<button onclick="loadSummary()">Visa total tid</button>
+
+<div class="summary-row">
+  <div id="weekInfo"></div>
+
+  <div id="total">Total tid: 0 min</div>
+
+  <button id="detailBtn" onclick="toggleDetail()">Detail</button>
+</div>
+
+<div id="detail" style="display:none;"></div>
+
+<hr>
+<div id="taskContainer"></div>
+
+<div id="inputBox" style="display:none;">
+  <input type="number" id="minutes" placeholder="Ange minuter eller antal">
+  <button onclick="submitDuration()">Bekräfta</button>
+</div>
+
+<div id="popup" class="popup hidden">
+  <div class="popup-box">
+    <p id="popup-text"></p>
+    <button onclick="closePopup()">OK</button>
+  </div>
+</div>
+
+<script type="module" src="app.js"></script>
+
+
+
+</body>
+</html>
